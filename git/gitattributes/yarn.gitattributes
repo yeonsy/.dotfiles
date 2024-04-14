@@ -1,3 +1,8 @@
 /.yarn/**            linguist-vendored
 /.yarn/plugins/**    binary
 /.pnp.*              binary linguist-generated
+
+# see https://github.com/github-linguist/linguist/issues/4348 for discussion on this
+# personally I think it's fine now that yarn 4.0 has hardened mode:
+# https://yarnpkg.com/features/security#hardened-mode
+yarn.lock            linguist-generated -diff
