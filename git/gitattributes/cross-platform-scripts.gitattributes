@@ -1,0 +1,6 @@
+# force batch scripts from a unix share to have CRLF endings
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# force bash scripts from a windows share to have LF endings
+*.sh text eol=lf
