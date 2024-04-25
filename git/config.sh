@@ -13,6 +13,9 @@ git config --global core.editor vim
 # master -> main
 git config --global init.defaultBranch main
 
+# use zdiff3 merge style (see https://git-scm.com/docs/git-merge#_how_conflicts_are_presented)
+git config --global merge.conflictStyle zdiff3
+
 # enable commit signing with ssh key
 git config --global gpg.format ssh
 git config --global user.signingkey $GIT_PUBLIC_KEY
